@@ -1,0 +1,21 @@
+ docker-compose up -d postgres
+
+ docker-compose up -d pgadmin
+
+
+
+codigo postgres
+CREATE TABLE tareas (
+	id serial PRIMARY KEY,
+	title VARCHAR ( 250 ) NOT NULL,
+	completed boolean DEFAULT false
+);
+
+
+instalar postgres
+npm i pg
+
+
+orm
+npm install --save sequelize
+npm install --save pg pg-hstore
